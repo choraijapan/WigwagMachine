@@ -41,8 +41,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        _CurrentState.Update();         //针对的是对当前状态的Update一直执行
+		if (_CurrentState != null)
+        	_CurrentState.Update();         //针对的是对当前状态的Update一直执行
 
     }
 
